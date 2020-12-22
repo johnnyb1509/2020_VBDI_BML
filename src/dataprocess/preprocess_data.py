@@ -21,7 +21,7 @@ data_process = pd.merge(df_new[['NewsId','Ticker',
 data_process['Ticker'].fillna(data_process['OrganCode'], inplace=True)
 
 data_process = data_process.dropna(subset=['NewsFullContent']).reset_index()
-
+#%%
 def validate_RomanNumerals(string): 
     new_string = [] 
     # Importing regular expression 
@@ -33,7 +33,7 @@ def validate_RomanNumerals(string):
 
 def clean_html(raw_html):
     cleanr = re.compile('<.*?>|&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-f]{1,6});|\n|\t|\r|\xa0|&nbsp;')
-    translator = str.maketrans('', '', string.punctuation) # Delete punctuation translator
+    # translator = str.maketrans('', '', string.punctuation) # Delete punctuation translator
     for i in range(len(raw_html)):
         print('processing {}%'.format(round(i/len(raw_html)*100, 2)))
         raw_html[i] = re.sub(cleanr,' ', str(raw_html[i])) # clean html syntax
@@ -42,7 +42,8 @@ def clean_html(raw_html):
         raw_html[i] = validate_RomanNumerals(raw_html[i]) # remove Roman number
         raw_html[i] = BeautifulSoup(raw_html[i], "lxml").text 
         raw_html[i] = raw_html[i].lower() # chuyen het uppercase sang lowercase
-        raw_html[i] = raw_html[i].translate(translator) # delete puntuation
+        raw_html[i] = raw_html[i].replace('/', '')
+        # raw_html[i] = raw_html[i].translate(translator) # delete puntuation
     return raw_html
 
 data_array_clean = clean_html(data_process['NewsFullContent'].values)
@@ -51,19 +52,23 @@ data_process['NewsFullContent'] = data_array_clean
 print('Saving the processed data to .csv file')
 data_process.to_csv('./data/data_preprocess.csv', encoding='utf-8')
 
-
+data_test = data_process.loc[:50]
 #%%
 # Content filter on tickers
 tickers = ['bid', 'ctg', 'vcb', 'stb', 'ssi', 'vic', 'fpt', 'mwg', 'pnj', 'msn']
-
-list_news = {}
-for ticker in tickers:
-    print('getting ticker {}'.format(ticker.upper()))
-    list_news[ticker] = data_process[data_process['Ticker'] == ticker.upper()].dropna(subset=['PublicDate'])
-    print('datefrom: {}'.format(list_news[ticker]['PublicDate'].values[0]))
-    print('dateto: {}'.format(list_news[ticker]['PublicDate'].values[-1]))
-    print('size: {}'.format(len(list_news[ticker])))
-    print('save to {}_news.csv file'.format(ticker))
-    list_news[ticker].to_csv('./data/{}_news.csv'.format(ticker))
-    print('=============================================')
+tickers = [i.upper() for i in tickers]
+#%%
+data_ticker = data_process[data_process['Ticker'].isin(tickers)].dropna(subset=['PublicDate'])
+data_ticker.to_csv('./data/filtered_news.csv')
+#%%
+# list_news = {}
+# for ticker in tickers:
+#     print('getting ticker {}'.format(ticker.upper()))
+#     list_news[ticker] = data_process[data_process['Ticker'] == ticker.upper()].dropna(subset=['PublicDate'])
+#     print('datefrom: {}'.format(list_news[ticker]['PublicDate'].values[0]))
+#     print('dateto: {}'.format(list_news[ticker]['PublicDate'].values[-1]))
+#     print('size: {}'.format(len(list_news[ticker])))
+#     print('save to {}_news.csv file'.format(ticker))
+#     list_news[ticker].to_csv('./data/{}_news.csv'.format(ticker))
+#     print('=============================================')
 

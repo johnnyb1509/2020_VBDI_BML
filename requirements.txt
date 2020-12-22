@@ -1,0 +1,6 @@
+numpy
+pandas
+underthesea
+googletrans
+nltk
+bs4
