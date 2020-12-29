@@ -1,0 +1,18 @@
+Title: 
+Nhóm chứng khoán bứt phá mạnh, VN-Index vượt mốc 1.090 điểm
+ Full content: 
+Phiên giao dịch 28 12 diễn ra khá tích cực với sắc xanh hiện diện trên cả 3 chỉ số ngay từ những phút mở cửa và có lúc VN Index lên tới 1 095 điểm Việc thị trường tăng "nóng" ngay từ đầu phiên đã dẫn tới áp lực chốt lời gia tăng và các chỉ số dần thu hẹp đà tăng sau đó ít phút Một số cổ phiếu lớn nhƯ CTG REE VNM HDB BCM giảm điểm phần nào tác động tiêu cực tới thị trường Dù vậy BVH FPT GAS HPG VCB BID VHM POW MWG vẫn tăng điểm giúp thị trường giữ vững sắc xanh Nhóm chứng khoán tiếp tục là tâm điểm thu hút dòng tiền với nhiều mã tăng mạnh như AGR BSI BVS HCM MBS VDS VND VCI FTS SSI SHS Trong khi đó các nhóm cổ phiếu bất động sản xây dựng dầu khí thép khu công nghiệp giao dịch phân hóa khá mạnh với sắc xanh đỏ đan xen Tại thời điểm 10h chỉ số VN Index tăng 5 8 điểm 0 53 lên 1 090 22 điểm HNX Index tăng 0 54 lên 193 49 điểm và UPCom Index tăng 0 14 lên 73 04 điểm Thanh khoản toàn thị trường duy trì mức cao với giá trị giao dịch 3 sàn đạt 4 500 tỷ đồng Khối ngoại hiện mua ròng 10 tỷ đồng trên HOSE lực mua tập trung vào chứng chỉ quỹ FUEVFVND với 18 5 tỷ đồng 
+ Keyword: 
+['phiên' 'giao_dịch' 'khá' 'tích_cực' 'với' 'sắc' 'hiện_diện' 'trên'
+ 'chỉ_số' 'ngay' 'từ' 'những' 'phút' 'mở_cửa' 'và' 'có' 'lên' 'điểm'
+ 'thị_trường' 'tăng' 'nóng' 'ngay' 'từ' 'đầu' 'phiên' 'đã' 'áp_lực' 'chốt'
+ 'gia_tăng' 'và' 'chỉ_số' 'thu_hẹp' 'tăng' 'ít' 'phút' 'một_số' 'cổ_phiếu'
+ 'lớn' 'giảm' 'điểm' 'phần_nào' 'tác_động' 'tiêu_cực' 'thị_trường' 'vẫn'
+ 'tăng' 'điểm' 'thị_trường' 'giữ' 'sắc' 'nhóm' 'chứng_khoán' 'tiếp_tục'
+ 'là' 'tâm' 'điểm' 'thu_hút' 'tiền' 'với' 'nhiều' 'mã' 'tăng' 'trong'
+ 'nhóm' 'cổ_phiếu' 'bất_động_sản' 'xây_dựng' 'dầu_khí' 'thép' 'khu'
+ 'công_nghiệp' 'giao_dịch' 'phân_hoá' 'khá' 'với' 'sắc' 'xanh_đỏ'
+ 'đan_xen' 'tại' 'chỉ_số' 'tăng' 'điểm' 'lên' 'điểm' 'tăng' 'lên' 'điểm'
+ 'và' 'tăng' 'lên' 'điểm' 'thanh' 'thị_trường' 'duy_trì' 'cao' 'với'
+ 'giá_trị' 'giao_dịch' 'tỷ' 'đồng' 'khối' 'mua' 'tỷ' 'đồng' 'trên' 'lực'
+ 'mua' 'tập_trung' 'chứng_chỉ' 'với' 'tỷ' 'đồng']
