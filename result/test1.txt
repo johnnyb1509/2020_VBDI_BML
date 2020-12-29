@@ -1,0 +1,22 @@
+Title: 
+Giá vàng trong nước bật tăng mạnh
+ Full content: 
+Mở cửa sáng nay 28 12 giá vàng trong nước tăng khoảng 100 150 nghìn đồng lượng so với cuối tuần trước Giá bán ra vàng SJC hiện đã lên sát mốc 56 triệu đồng lượng Trước đó trong tuần 21 26 12 giá vàng trong nước cũng đã tăng khoảng 300 nghìn đồng lượng Cụ thể Vàng bạc đá quý Sài Gòn hiện niêm yết giá vàng SJC ở mức 55 4 55 9 triệu đồng lượng tăng 100 nghìn đồng lượng so với cuối phiên trước đó Vàng bạc đá quý Phú Nhuận PNJ tăng 100 nghìn đồng lượng chiều mua và 150 nghìn đồng lượng chiều bán lên mức 55 4 55 95 triệu đồng lượng Giá vàng trong nước tăng khi giá vàng thế giới trên đà đi lên hướng mốc 1 900 USD ounce Lúc 8h30 28 12 giờ Việt Nam giá vàng giao ngay đứng ở mức 1 893 USD ounce tăng 15 USD ounce so với phiên trước đó Quy đổi theo tỷ giá VND USD giá vàng thế giới hiện tượng đương với 53 triệu đồng lượng rẻ hơn gần 3 triệu đồng lượng so với giá vàng trong nước Giám đốc chiến lược thị trường của FXTM ông Hussein Sayed cho biết "Chúng tôi vẫn giữ dự báo tích cực đối với vàng miễn là lợi suất thực tiếp tục giao dịch trong vùng tiêu cực đây có thể là kịch bản trong năm tới" Đó là lý do tại sao những ngày cuối cùng của năm vàng có thể chạm mức 1 900 USD ounce 
+ Keyword: 
+['sáng' 'nay' 'giá' 'vàng' 'trong' 'nước' 'tăng' 'khoảng' 'nghìn' 'đồng'
+ 'lượng' 'với' 'trước' 'giá' 'bán' 'vàng' 'đã' 'lên' 'sát' 'triệu' 'đồng'
+ 'lượng' 'trước' 'trong' 'giá' 'vàng' 'trong' 'nước' 'cũng' 'đã' 'tăng'
+ 'khoảng' 'nghìn' 'đồng' 'lượng' 'cụ_thể' 'đá_quý' 'giá' 'vàng' 'ở'
+ 'triệu' 'đồng' 'lượng' 'tăng' 'nghìn' 'đồng' 'lượng' 'với' 'phiên'
+ 'trước' 'đá_quý' 'tăng' 'nghìn' 'đồng' 'lượng' 'chiều' 'mua' 'và' 'nghìn'
+ 'đồng' 'lượng' 'chiều' 'bán' 'lên' 'triệu' 'đồng' 'lượng' 'giá' 'vàng'
+ 'trong' 'nước' 'tăng' 'giá' 'vàng' 'thế_giới' 'trên' 'đi' 'lên' 'ounce'
+ 'giờ' 'giá' 'vàng' 'ngay' 'đứng' 'ở' 'ounce' 'tăng' 'ounce' 'với' 'phiên'
+ 'trước' 'quy_đổi' 'theo' 'tỷ_giá' 'giá' 'vàng' 'thế_giới' 'hiện_tượng'
+ 'đương' 'với' 'triệu' 'đồng' 'lượng' 'rẻ' 'hơn' 'gần' 'triệu' 'đồng'
+ 'lượng' 'với' 'giá' 'vàng' 'trong' 'nước' 'giám_đốc' 'chiến_lược'
+ 'thị_trường' 'của' 'cho' 'biết' 'chúng_tôi' 'vẫn' 'giữ' 'dự_báo'
+ 'tích_cực' 'vàng' 'miễn_là' 'lợi_suất' 'thực' 'tiếp_tục' 'giao_dịch'
+ 'trong' 'vùng' 'tiêu_cực' 'đây' 'có_thể' 'là' 'kịch_bản' 'trong' 'năm'
+ 'là' 'lý_do' 'tại_sao' 'những' 'ngày' 'cuối_cùng' 'của' 'năm' 'vàng'
+ 'có_thể' 'chạm' 'ounce']
