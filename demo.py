@@ -117,7 +117,7 @@ def data_process_test(X, annotator, pos, ner):
     X['form'] = X_t.apply(lambda x: get_form(x))
     X['pos_tag'] = X_t.apply(lambda x: get_postag(x))
     X['form_text'] = X['form'].apply(lambda x: (" ").join(x))
-    tfidf_save = pickle.load(open('C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/model/tfidf.sav', 'rb'))
+    tfidf_save = pickle.load(open('./2020_VBDI_BML/model/tfidf.sav', 'rb'))
     # tfidf_matrix = tfidf_save.transform(X['form_text'])
     # feature_names = tfidf_save.get_feature_names()
     X['ifidf_for_words'] = X['form_text'].apply(lambda x : get_ifidf_for_words(x, tfidf_save))
@@ -222,18 +222,18 @@ def test_result(X_test, X_test1, y_pred, row_to_check = 0):
     return title, full_content, key_extract
 
 if __name__ == "__main__":
-    df = pd.read_csv('C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/data/demo_clean.csv')
+    df = pd.read_csv('./2020_VBDI_BML/data/demo_clean.csv')
 
-    annotator = VnCoreNLP("C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/VnCoreNLP-master/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx500m')
-    pos = VnCoreNLP("C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/VnCoreNLP-master/VnCoreNLP-1.1.1.jar", annotators="wseg,pos", max_heap_size='-Xmx500m')
-    ner = VnCoreNLP("C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/VnCoreNLP-master/VnCoreNLP-1.1.1.jar", annotators="wseg,pos,ner", max_heap_size='-Xmx2g')
+    annotator = VnCoreNLP("./2020_VBDI_BML/VnCoreNLP-master/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx500m')
+    pos = VnCoreNLP("./2020_VBDI_BML/VnCoreNLP-master/VnCoreNLP-1.1.1.jar", annotators="wseg,pos", max_heap_size='-Xmx500m')
+    ner = VnCoreNLP("./2020_VBDI_BML/VnCoreNLP-master/VnCoreNLP-1.1.1.jar", annotators="wseg,pos,ner", max_heap_size='-Xmx2g')
 
     df['features'] = combine_feature(data_process_test(df, annotator, pos, ner))
 
     feat = df['features'].tolist()
     X = [extract_features(doc) for doc in feat]
 
-    model = pickle.load(open('C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/model/crf.sav', 'rb'))
+    model = pickle.load(open('./2020_VBDI_BML/model/crf.sav', 'rb'))
 
     y_pred = model.predict(X)
     # Create a mapping of labels to indices
@@ -243,7 +243,7 @@ if __name__ == "__main__":
     predictions = np.array([labels[tag] for row in y_pred for tag in row])
 
     title, full_content, key_extract = test_result(df, X, y_pred, row_to_check = 0)
-    with open('C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/result/test1.txt', "w", encoding="utf-8") as f:
+    with open('./2020_VBDI_BML/result/test1.txt', "w", encoding="utf-8") as f:
         f.write("Title: \n")
         f.write(title)
         f.write("\n Full content: \n")
@@ -252,7 +252,7 @@ if __name__ == "__main__":
         f.write(str(key_extract))
 
     title, full_content, key_extract = test_result(df, X, y_pred, row_to_check = 1)
-    with open('C:/Users/anhdq33/Downloads/VinBigData/ML/Project/2020_VBDI_BML/result/test2.txt', "w", encoding="utf-8") as f:
+    with open('./2020_VBDI_BML/result/test2.txt', "w", encoding="utf-8") as f:
         f.write("Title: \n")
         f.write(title)
         f.write("\n Full content: \n")
